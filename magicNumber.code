@@ -1,0 +1,8 @@
+def main(private field a, private field b, private field c, private field d, private field e) -> (field):
+    field left = a * 10000 + b * 1000 + c * 100 + d * 10 + e
+    field right = e * 10000 + d * 1000 + c * 100 + b * 10 + a
+
+    left * 4 == right 
+
+    return 1
+

@@ -1,0 +1,69 @@
+body {
+    background-color:#F0F0F0;
+    padding: 2em;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    color: #212121;
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 41px;
+    font-size: 26px;
+    letter-spacing: 0.02em;
+}
+
+.loading { 
+    height: 200px;
+    float: right;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.label { 
+    font-weight: lighter;
+    color: #D1C4E9;
+}
+
+.bold { 
+    font-weight: bolder;
+}
+
+button {
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #FF5252;
+    border-color: #FF5252; 
+    color: white;
+    margin-top: 1em;
+    box-shadow: 0 3px 10px rgba(0,0,0,.23), 0 3px 10px rgba(0,0,0,.16);
+    margin-bottom: 3em;
+}
+
+.verified { 
+    height: 75px;
+    float: right;
+    margin-top: 1em;
+}
+
+.sell { 
+    background-color: white;
+    color: #D1C4E9;
+}
+
+.star-owner { 
+    font-size: 12px;
+}
+
+textarea { 
+    border-radius: 10px;
+    width: 100%;
+}
+
+.star-block { 
+    display: inline-block;
+    margin-right: 3em;
+    text-align: center;
+}
