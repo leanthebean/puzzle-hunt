@@ -80,7 +80,6 @@ App = {
     bindEvents: function () {
         $(document).on('click', '#ten-action-button', App.handleSubmittingTenAnswer);
         $(document).on('click', '#magic-action-button', App.handleSubmittingMagicAnswer);
-        $(document).on('click', '#other-action-button', App.handleSubmittingOtherAnswer);
     },
     
     handleSubmittingTenAnswer: function () {

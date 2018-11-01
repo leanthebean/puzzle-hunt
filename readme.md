@@ -328,4 +328,4 @@ git clone git@github.com:leanthebean/puzzle-hunt.git
 
 8. Now copy over the entire proof from the terminal when you generated the proof into the appropriate textbox, click submit, and see if you got it right by getting an NFT! Whoo!~ 
 
-
+![](https://im6.ezgif.com/tmp/ezgif-6-733943349c30.gif)

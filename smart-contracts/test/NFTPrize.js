@@ -25,7 +25,7 @@ contract('NFTPrize', accounts => {
         assert.equal(tx.logs[0].event, 'PuzzleAdded')
         assert.equal(tx.logs[0].args.addr, verifierContract.address)
         assert.equal(tx.logs[0].args.tokenImage, 'test')
-        assert.equal(new web3.BigNumber(tx.logs[0].args.puzzleId).toNumber(), 3)
+        assert.equal(new web3.BigNumber(tx.logs[0].args.puzzleId).toNumber(), 2)
     })
 
     it('mints a token if you got the answer right!', async function () {
@@ -33,16 +33,16 @@ contract('NFTPrize', accounts => {
         let proof = {
             "proof":
             {
-                "A":["0x156b49825ec8e6707add754c855dc7622fcdb34b201d8f40330bba675ae262b4", "0x27bc8384bfc92ab40989043573a252cf8f0a3627b4c82d8ed7dae095b7f569b4"],
-                "A_p":["0x72418cbe5fc6f19180d98889aee4b108378e609b50012dd492214b8f0c893ec", "0x69b5ebe100f8fb59e881d1c060d47038436d4bf68daa6153bf9c995afd82fc6"],
+                "A":["0x1d85e15a612f798991577f26bec8281409118727cd1ed8f829b3978a0e28048d", "0x28764947ddaf52e0441136fd422d38f4e715d035ac95f1104171bab10d40500c"],
+                "A_p":["0x293597e0d4e761b95704b99fbe41cf0c6c56a3608c10c6b31fea23a0ed97b1a", "0x1e523eb72f285906493ca8fda1226dc0aa5dcffb9747aaab2363a17d796a1dbd"],
                 "B":
-                    [["0xf8cee8e3080be8f6ed405727934cff0679ff24ff0165e5d8dd41e4cae279e04", "0xf954cbb77549ed76161db8ce7dd93696f73a63cfa32ddd1baf8c346a62b42ca"], ["0x2b1cc8c2bb792609a06fdbd9b6c2c2986997a684315b1ae53576940e51f6e852", "0x1b00869eb552c622293ce2c1f84e353022d1b73f3c00659e5bd96d263f49cf7f"]],
+                    [["0x22a409ccafb62270c2ba5ce2fb966cea5647dc8ba8ff722cd7587a0a034ae299", "0x2ac710d5f7c29ca21d0e4e523d9f19146dcdc94dcda4d1b95b4afd8dc943a7a"], ["0x1f364165e7b63db1d21f191e12d246f3b3b5ddf9a7520093d3116e9f93c3d75", "0x1358ce8542b8c21c6134ffc0e365a637305c72585245edc02c323638e2733a96"]],
                 
-                "B_p":["0x23315ce06bd6a5fa71ae8fd0ccdc222ccf796e006f21888c594ac56ac5d2b816", "0x2049831598234afeacca2a8e0c98aa6ab5b4a8ccbe157eb54d9d6097a8c7b0b4"],
-                "C":["0x10db600dbb3e04d3321fed8716c2242b716a35e0cec69746186124973a66933d", "0x1c0271267d84b7dac114405a889dc6c3168693432383c3458caeb6806ade5d70"],
-                "C_p":["0x1d16d35bb8fe689cf68464ebc360a4d3b47ecae2c3c53190379efee15cc404da", "0x10cc7833db65a877446c7fe8ea581fab772f16b0cc1bf1fa789181db3ab04df6"],
-                "H":["0x117710b892e51132f3ad084ac169525d06eec09c8e9f05c2c582411e95074b41", "0x13f42bd6975d27755ea6ab6f34fa194bea0bc812762d521914986949a36674ec"],
-                "K":["0x1263908bd874e2c285c61bffa656505f197599d1bb4384fa173946f826b09011", "0xac3db0945e610ead9984463bd21134e16f4fcfa86ada5253f9136fc575983f3"]
+                "B_p":["0x83c39894430bd1e0435fc861fd736512ab5e79fe8c1947ee484b865e2de846e", "0xd5196ced0c6e70614017f4c6200f5e24a2ac50868bacf2bb7a82317e825f3c"],
+                "C":["0x2de5245c6d036d74269c6953f93fd7aef819d15b55bc3454a593c1805fcbf616", "0x1196e825cdfc3bc85e74d212b8b088dd0e94e588fb0236934ccb44e5b436936"],
+                "C_p":["0x176a956446f9f78d52d1d1170e9116862225215e66fc79060a0b40e8af3aa4ba", "0x128e0755f23439054d3cecc5a1bc204cd6b1fc5148e1e2835974a05d82dd3791"],
+                "H":["0x230a619bb05c54aa5505524e0ec29236f10ef06ce267ff45853be0d94267ac17", "0xd2a10294494b1afec1a7a1bc0dfd56f0eff5b95e899c8c4810309aa9a3fc20b"],
+                "K":["0xfa286608a133fb27349e9ba8c7ca5d076a76946c165ca3bd69f53e800e62408", "0x19257bd009d9c11b4b829d766cf98ca4cd3755688df0b569bfe72d20ee47efb7"]
             },
             "input":[1]
         }
@@ -70,16 +70,16 @@ contract('NFTPrize', accounts => {
         let proof = {
             "proof":
             {
-                "A":["0x267b0cab31f73b66e1a8f09ff186745f4c36fbf7c48b9218b37385a57a3f4cdf", "0x126427a05fee6103e45b1d6fa687ba9398d8f360f0eef73442b5acc6309ed517"],
-                "A_p":["0x2f15a1d48ef3a26b9b9e4b4d06c16b54238c5a13230bf66421cf5e79aedf61c", "0x29895668ec13f4ead8b0ad149fb18d6f5db4fc2506ee1265207f94090a00c335"],
+                "A":["0x1a9360ccd98f6d6ce0e9958d83196ee2f08a33f698bcfd3b9cb4178baa1ee556", "0x25db4af5af9b8392121284c716b17c6cc801d369f47b5ceff28ae3221ba8f617"],
+                "A_p":["0x262f212854c159fda72bfec1e690cba826f13e242945c3501c1860bfbf7a1cf8", "0x2c81c8ce51b01806f0ac0b855a1ac56faac183fdbc1994ba3c61cc48e97408aa"],
                 "B":
-                    [["0x89c88b3b259377131734ff20420a79d1d9e0315bb8f619a5e93d4c26357d758", "0x1271f9639fcdc081b2ec4caf663d436d53c157d0ee0a509756ee58ec51b72a71"], ["0x1308bdae25453786bd05460942ee730af8b05f808806a0456c26162e0cf6147b", "0x176772bd840995619a59f1c601af52580fd2b9b267248e2cd7a45bb8cfe3f423"]],
+                    [["0x1909f796987105ad1efe345a6f80288664b992299e2badcb8e36d6fd7843460f", "0x183c9bc8a9b07f1d005530e09d40307150d1408605b240817f3f014b2b0c922d"], ["0x121dfc02e66f955be081fbb0b23cd59e38c4b69c6ad7eeb9551173d7a2cccc30", "0x81eaec6c58c458f375120feec1f0ccd00149aea7955842c474812e9f5497f1e"]],
                 
-                "B_p":["0x1ce5ce9c2a9eec10bcfa936e517db77ab9dc6a3aa03c13a468f753c134a9747e", "0x1e7f6e0aa46d77e0f54129e98980daf3a77beb7e034f8e43457afbcdb0ad4684"],
-                "C":["0x6f2b731528915dff314c5e40bb1e7b4868e3d14ddc4687b241c049b210346b", "0x2852dad4d459bc412bd5422767304aab28f45e20a3794d5548eeb253eace8f85"],
-                "C_p":["0xe4c2459b8eb9cfecae275fb3ec300caa2ba7c06f93ddb8bcaa50202d6489b86", "0x1de62c8ecea0b267d2f1111b171f6625b3f609cf6d0d2a68a7fc6d443e100500"],
-                "H":["0xed9fd578cce4add17cd550702293739e2ed9e3d9826bdeaf4af270cba9775cf", "0xfedd006493f40bf035506e7b1b8de181cb160ee3fc4481a7736e0318ecf2d69"],
-                "K":["0x22633fef7110cb393a6208f21fc20ce0047124535397f66a19d93f056d71cb13", "0x161c88e4c10f8e64356c50960aafac7815417caf9676fe08496475a9f5a6a21e"]
+                "B_p":["0x18238c1e2e48e4731820e03908dc593e95f76d12ce6c32ff6b7bd67cc3d44382", "0xc6c87902a3ed8c348963dcfaef40f33f5ea7d2b634a5ed5cdcacaac14b58e4f"],
+                "C":["0xb229ee67f6d5b739c0f22aa970aab60170c2799694ea992d238f0bfc480dc0f", "0x16f35ef1f6333eba6cadddf383d6d2ad81fc186029a5f8615d6692e75b9dd39"],
+                "C_p":["0xc64f421617c1c18affaa975c7d7632259c4afb7980d8b25e4574517eede0769", "0x1abdfd6d021a3e313fba0b40cc97a5709bdd12db31b708a9da8aded1ac9fa837"],
+                "H":["0x2eb4d8b1bad1e9a2f215fafefaf8c1bf4c7987f0a394db048a5695e4a3874acf", "0x29cd9bcdf33731d4ba5c5ea74abcf2f961b12682cf4907dd3cdc66c335cd416c"],
+                "K":["0x15710993ae81311bb359f94738eff034e9cc4f58ed784a231824f47aff4445e6", "0x1ec2a886f4e6c6d848e99649a7f44c0894baf071ea45045d96b80d63803876c5"]
             },
             "input":[1]
         }
