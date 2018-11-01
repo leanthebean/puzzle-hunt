@@ -1,5 +1,4 @@
 smart-contracts/node_modules
-smart-contracts/build/*
 out
 out.code
 proving.key
