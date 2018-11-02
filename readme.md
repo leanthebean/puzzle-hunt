@@ -1,4 +1,7 @@
-# Read me
+# Readme
+
+This is part of a Devcon ZKPs tutorial. [Slides](https://docs.google.com/presentation/d/1gfB6WZMvM9mmDKofFibIgsyYShdf0RV_Y8TLz3k1Ls0)
+
 
 ## Install Zokrates with Docker
 
@@ -330,5 +333,3 @@ git clone git@github.com:leanthebean/puzzle-hunt.git
 
 
 Note: you'll have to re-generate the verification contracts since you need the verification keys to generate new proofs. 
-
-![](https://im6.ezgif.com/tmp/ezgif-6-733943349c30.gif)
